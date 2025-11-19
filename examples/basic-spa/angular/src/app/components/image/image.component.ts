@@ -60,8 +60,6 @@ export class ImageComponent extends SxaComponent implements OnInit, OnDestroy {
   }
 
   public get variant(): TemplateRef<any> {
-    return this.rendering.params?.FieldNames === 'Banner'
-      ? this.bannerVariant
-      : this.defaultVariant;
+    return this.defaultVariant;
   }
 }
